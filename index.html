@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nodejs.org/en</title>
+
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh; 
+        overflow-x: auto; /* Change to auto */
+}
+/* Common styles for elements */
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto; /* Add horizontal scrollbar when necessary */
+}
+.header, .button, .info, .footer_section {
+    width: 100%; /* Make sure these sections take up full width */
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .container {
+        overflow-x: scroll; /* Add horizontal scrollbar on smaller screens */
+    }
+    .header, .button, .info, .footer_section {
+        flex-direction: column; /* Display sections in one column on smaller screens */
+        align-items: center; /* Center align items in each section */
+    }
+}
+
+
+    img.logo {
+        width: 100px;
+        padding-top: 10px;
+        float: left; 
+    }
+    nav ul{
+        list-style: none;
+        color: rgb(176, 169, 169);
+        font-size: 12px;
+        padding-top: 0;
+        margin: 0; 
+        display: flex; 
+        justify-content: center; 
+    }
+    nav ul li {
+        margin: 0 10px; 
+        cursor: pointer;
+    }
+    nav ul li:hover{
+        text-decoration: underline;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        background-color: hsl(0, 0%, 20%);
+        padding: 0; 
+    }
+    img.icon {
+        width: 90px;
+        float: right; 
+    }
+    .info{
+        text-align: center;
+        font-size: 19px;
+        margin-top: 48px;
+        color: #333;
+    }
+    .reg{
+        font-size: 12px;
+        color: #333;
+    }
+    h3{
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 700;
+        margin-top: 35px;
+        color:  hsl(0, 0%, 17%);
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    button{
+        width: 300px;
+        height: 100px;
+        background-color: #026e00;;
+        border: none;
+        border: 15px;
+        border-radius: 5px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #2aa328;
+    }
+    button p:first-of-type {
+        color: hsl(0, 0%, 100%);
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 2px;
+    }
+    button p:last-of-type {
+        color: hsl(0, 0%, 100%);
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0 10px
+    }
+    .button1 div{
+        margin-top: 20px;
+        color: #51744e;
+        cursor: pointer;
+    }
+    .link span:hover{
+        text-decoration: underline;
+    }
+    .button2 div{
+        margin-top: 20px;
+        color: #51744e;
+        cursor: pointer;
+    }
+    .release{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 105px;
+        font-size: larger;
+    }
+    .release span{
+        color: #43853d;
+        cursor: pointer;
+    }
+    .release span:hover{
+        background-color: #43853d;
+        color: white;
+        padding: 3px 0;
+        border-radius: 5px;
+    }
+    footer{
+        background-color:hsl(0, 0%, 17%);
+        padding: 5px 10px 10px 10px;
+    }
+    footer p{
+        text-align: center;
+        padding:  0;
+        font-size: 12px;
+        color: white;
+        margin: 8px;
+    }
+    footer .link span{
+        color: #add8e6;
+        text-decoration: none;
+    }
+    footer p a{
+        color: #add8e6;
+        text-decoration: none;
+    }
+    footer p:first-of-type {
+        padding-top: 15px;
+    }
+    footer p:last-of-type {
+    color: #add8e6;
+    padding-top: 15px; 
+    padding-bottom: 10px; 
+    font-size: 14px;
+    }
+
+    /* Media Query for Responsive Design */
+    @media only screen and (max-width: 768px) {
+        .container {
+            overflow-x: scroll; /* Add horizontal scrollbar on smaller screens */
+        }
+        .header, .button, .info, .footer_section {
+            flex-direction: column; /* Display sections in one column on smaller screens */
+            align-items: center; /* Center align items in each section */
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <header>
+            <div class="header">
+                <img class="logo" src="logonode.png" alt="Logo Here">
+                <nav>
+                    <ul>
+                        <li>LEARN &nbsp;| </li>
+                        <li>ABOUT &nbsp;| </li>
+                        <li>DOWNLOAD &nbsp;| </li>
+                        <li>GUIDES &nbsp;| </li>
+                        <li>BLOGS &nbsp;| </li>
+                        <li>DOCS &nbsp;| </li>
+                        <li>CERTIFICATE</li>
+                    </ul>
+                </nav>
+                    <img class="icon" src="icon.png" alt="Icon">
+            </div>  
+        </header>
+        
+        
+        <main class="main">
+    
+            <div class="info">Node.js<sup><span class="reg">®</span></sup> is an open-source, cross-platform JavaScript runtime environment.</div>
+            <h3>Download Node.js<sup><span class="reg">®</span></sup></h3>
+    
+            <section class="button">
+                <div class="button1">
+                    <button>
+                        <p>20.11.1 LTS</p>
+                        <p>Recommanded For Most Users</p>
+                    </button>
+                    <div class="link">
+                        <span>Other Downloaded |</span> <span>Changelog |</span> <span>API Docs</span>
+                    </div>
+                </div>
+                <div class="button2">
+                    <button>
+                        <p>21.6.2 Current</p>
+                        <p>Latest Features</p>
+                    </button>
+                    <div class="link">
+                        <span>Other Downloaded |</span> <span>Changelog |</span> <span>API Docs</span>
+                    </div>
+                </div>
+            </section>
+            <div class="release">For information about supported releases, see the <span>release schedule.</span> </div>
+        
+        </main>
+    
+        <section class="footer_section">
+            <footer>
+            <p class="link">Copyright <a href="#"><span>OpenJS Foundation</span></a> and Node.js contributors. All rights reserved. The <a href="#"><span>OpenJS Foundation</span></a> has registered trademarks and uses trademarks. For a list of trademarks <p class="link">of the <a href="#"><span>OpenJS Foundation</span></a>, please see our <a href="#"><span>Trademark Policy</span></a> and <a href="#"><span>Trademark List</span></a>. Trademarks and logos not indicated on the <a href="#"><span>list of OpenJS Foundation trademarks are</span></a></p> <p>trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</p>
+            <p class="link"><span>The OpenJS Foundation</span> | <span>Trademark Policy</span> | <span>Privacy Policy</span> | <span>Code of Conduct</span> | <span>Security Reporting</span></p>
+            </footer>
+        </section>
+    </section>
+    
+
+</body>
+</html>
